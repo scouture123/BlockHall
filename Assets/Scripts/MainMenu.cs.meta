@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 787de2bdf3c56494d956c4af1ea9f0c3
+timeCreated: 1482352900
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - skyboxMontagne: {fileID: 2100000, guid: 72c591ca3a444164ca483831e861716b, type: 2}
+  - skyboxPlage: {fileID: 2100000, guid: 1af062aa8c95b464db3fb44457c65496, type: 2}
+  - skyboxEspace: {fileID: 2100000, guid: 3f88bd2dd773efb4dba288958ebc36de, type: 2}
+  - mainCamera: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

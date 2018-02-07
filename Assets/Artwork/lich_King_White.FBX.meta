@@ -1,0 +1,604 @@
+fileFormatVersion: 2
+guid: f6f576d59bf11ba48aaa2325f4629f63
+timeCreated: 1480131993
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: arthaslichking
+    100002: arthaslichking 1
+    100004: arthaslichking_bone_0
+    100006: arthaslichking_bone_1
+    100008: arthaslichking_bone_10
+    100010: arthaslichking_bone_100
+    100012: arthaslichking_bone_101
+    100014: arthaslichking_bone_102
+    100016: arthaslichking_bone_103
+    100018: arthaslichking_bone_104
+    100020: arthaslichking_bone_105
+    100022: arthaslichking_bone_106
+    100024: arthaslichking_bone_107
+    100026: arthaslichking_bone_108
+    100028: arthaslichking_bone_109
+    100030: arthaslichking_bone_11
+    100032: arthaslichking_bone_110
+    100034: arthaslichking_bone_111
+    100036: arthaslichking_bone_112
+    100038: arthaslichking_bone_113
+    100040: arthaslichking_bone_114
+    100042: arthaslichking_bone_115
+    100044: arthaslichking_bone_116
+    100046: arthaslichking_bone_117
+    100048: arthaslichking_bone_118
+    100050: arthaslichking_bone_119
+    100052: arthaslichking_bone_12
+    100054: arthaslichking_bone_120
+    100056: arthaslichking_bone_121
+    100058: arthaslichking_bone_13
+    100060: arthaslichking_bone_14
+    100062: arthaslichking_bone_15
+    100064: arthaslichking_bone_16
+    100066: arthaslichking_bone_17
+    100068: arthaslichking_bone_18
+    100070: arthaslichking_bone_19
+    100072: arthaslichking_bone_2
+    100074: arthaslichking_bone_20
+    100076: arthaslichking_bone_21
+    100078: arthaslichking_bone_22
+    100080: arthaslichking_bone_23
+    100082: arthaslichking_bone_24
+    100084: arthaslichking_bone_25
+    100086: arthaslichking_bone_26
+    100088: arthaslichking_bone_27
+    100090: arthaslichking_bone_28
+    100092: arthaslichking_bone_29
+    100094: arthaslichking_bone_3
+    100096: arthaslichking_bone_30
+    100098: arthaslichking_bone_31
+    100100: arthaslichking_bone_32
+    100102: arthaslichking_bone_33
+    100104: arthaslichking_bone_34
+    100106: arthaslichking_bone_35
+    100108: arthaslichking_bone_36
+    100110: arthaslichking_bone_37
+    100112: arthaslichking_bone_38
+    100114: arthaslichking_bone_39
+    100116: arthaslichking_bone_4
+    100118: arthaslichking_bone_40
+    100120: arthaslichking_bone_41
+    100122: arthaslichking_bone_42
+    100124: arthaslichking_bone_43
+    100126: arthaslichking_bone_44
+    100128: arthaslichking_bone_45
+    100130: arthaslichking_bone_46
+    100132: arthaslichking_bone_47
+    100134: arthaslichking_bone_48
+    100136: arthaslichking_bone_49
+    100138: arthaslichking_bone_5
+    100140: arthaslichking_bone_50
+    100142: arthaslichking_bone_51
+    100144: arthaslichking_bone_52
+    100146: arthaslichking_bone_53
+    100148: arthaslichking_bone_54
+    100150: arthaslichking_bone_55
+    100152: arthaslichking_bone_56
+    100154: arthaslichking_bone_57
+    100156: arthaslichking_bone_58
+    100158: arthaslichking_bone_59
+    100160: arthaslichking_bone_6
+    100162: arthaslichking_bone_60
+    100164: arthaslichking_bone_61
+    100166: arthaslichking_bone_62
+    100168: arthaslichking_bone_63
+    100170: arthaslichking_bone_64
+    100172: arthaslichking_bone_65
+    100174: arthaslichking_bone_66
+    100176: arthaslichking_bone_67
+    100178: arthaslichking_bone_68
+    100180: arthaslichking_bone_69
+    100182: arthaslichking_bone_7
+    100184: arthaslichking_bone_70
+    100186: arthaslichking_bone_71
+    100188: arthaslichking_bone_72
+    100190: arthaslichking_bone_73
+    100192: arthaslichking_bone_74
+    100194: arthaslichking_bone_75
+    100196: arthaslichking_bone_76
+    100198: arthaslichking_bone_77
+    100200: arthaslichking_bone_78
+    100202: arthaslichking_bone_79
+    100204: arthaslichking_bone_8
+    100206: arthaslichking_bone_80
+    100208: arthaslichking_bone_81
+    100210: arthaslichking_bone_82
+    100212: arthaslichking_bone_83
+    100214: arthaslichking_bone_84
+    100216: arthaslichking_bone_85
+    100218: arthaslichking_bone_86
+    100220: arthaslichking_bone_87
+    100222: arthaslichking_bone_88
+    100224: arthaslichking_bone_89
+    100226: arthaslichking_bone_9
+    100228: arthaslichking_bone_90
+    100230: arthaslichking_bone_91
+    100232: arthaslichking_bone_92
+    100234: arthaslichking_bone_93
+    100236: arthaslichking_bone_94
+    100238: arthaslichking_bone_95
+    100240: arthaslichking_bone_96
+    100242: arthaslichking_bone_97
+    100244: arthaslichking_bone_98
+    100246: arthaslichking_bone_99
+    100248: //RootNode
+    400000: arthaslichking
+    400002: arthaslichking 1
+    400004: arthaslichking_bone_0
+    400006: arthaslichking_bone_1
+    400008: arthaslichking_bone_10
+    400010: arthaslichking_bone_100
+    400012: arthaslichking_bone_101
+    400014: arthaslichking_bone_102
+    400016: arthaslichking_bone_103
+    400018: arthaslichking_bone_104
+    400020: arthaslichking_bone_105
+    400022: arthaslichking_bone_106
+    400024: arthaslichking_bone_107
+    400026: arthaslichking_bone_108
+    400028: arthaslichking_bone_109
+    400030: arthaslichking_bone_11
+    400032: arthaslichking_bone_110
+    400034: arthaslichking_bone_111
+    400036: arthaslichking_bone_112
+    400038: arthaslichking_bone_113
+    400040: arthaslichking_bone_114
+    400042: arthaslichking_bone_115
+    400044: arthaslichking_bone_116
+    400046: arthaslichking_bone_117
+    400048: arthaslichking_bone_118
+    400050: arthaslichking_bone_119
+    400052: arthaslichking_bone_12
+    400054: arthaslichking_bone_120
+    400056: arthaslichking_bone_121
+    400058: arthaslichking_bone_13
+    400060: arthaslichking_bone_14
+    400062: arthaslichking_bone_15
+    400064: arthaslichking_bone_16
+    400066: arthaslichking_bone_17
+    400068: arthaslichking_bone_18
+    400070: arthaslichking_bone_19
+    400072: arthaslichking_bone_2
+    400074: arthaslichking_bone_20
+    400076: arthaslichking_bone_21
+    400078: arthaslichking_bone_22
+    400080: arthaslichking_bone_23
+    400082: arthaslichking_bone_24
+    400084: arthaslichking_bone_25
+    400086: arthaslichking_bone_26
+    400088: arthaslichking_bone_27
+    400090: arthaslichking_bone_28
+    400092: arthaslichking_bone_29
+    400094: arthaslichking_bone_3
+    400096: arthaslichking_bone_30
+    400098: arthaslichking_bone_31
+    400100: arthaslichking_bone_32
+    400102: arthaslichking_bone_33
+    400104: arthaslichking_bone_34
+    400106: arthaslichking_bone_35
+    400108: arthaslichking_bone_36
+    400110: arthaslichking_bone_37
+    400112: arthaslichking_bone_38
+    400114: arthaslichking_bone_39
+    400116: arthaslichking_bone_4
+    400118: arthaslichking_bone_40
+    400120: arthaslichking_bone_41
+    400122: arthaslichking_bone_42
+    400124: arthaslichking_bone_43
+    400126: arthaslichking_bone_44
+    400128: arthaslichking_bone_45
+    400130: arthaslichking_bone_46
+    400132: arthaslichking_bone_47
+    400134: arthaslichking_bone_48
+    400136: arthaslichking_bone_49
+    400138: arthaslichking_bone_5
+    400140: arthaslichking_bone_50
+    400142: arthaslichking_bone_51
+    400144: arthaslichking_bone_52
+    400146: arthaslichking_bone_53
+    400148: arthaslichking_bone_54
+    400150: arthaslichking_bone_55
+    400152: arthaslichking_bone_56
+    400154: arthaslichking_bone_57
+    400156: arthaslichking_bone_58
+    400158: arthaslichking_bone_59
+    400160: arthaslichking_bone_6
+    400162: arthaslichking_bone_60
+    400164: arthaslichking_bone_61
+    400166: arthaslichking_bone_62
+    400168: arthaslichking_bone_63
+    400170: arthaslichking_bone_64
+    400172: arthaslichking_bone_65
+    400174: arthaslichking_bone_66
+    400176: arthaslichking_bone_67
+    400178: arthaslichking_bone_68
+    400180: arthaslichking_bone_69
+    400182: arthaslichking_bone_7
+    400184: arthaslichking_bone_70
+    400186: arthaslichking_bone_71
+    400188: arthaslichking_bone_72
+    400190: arthaslichking_bone_73
+    400192: arthaslichking_bone_74
+    400194: arthaslichking_bone_75
+    400196: arthaslichking_bone_76
+    400198: arthaslichking_bone_77
+    400200: arthaslichking_bone_78
+    400202: arthaslichking_bone_79
+    400204: arthaslichking_bone_8
+    400206: arthaslichking_bone_80
+    400208: arthaslichking_bone_81
+    400210: arthaslichking_bone_82
+    400212: arthaslichking_bone_83
+    400214: arthaslichking_bone_84
+    400216: arthaslichking_bone_85
+    400218: arthaslichking_bone_86
+    400220: arthaslichking_bone_87
+    400222: arthaslichking_bone_88
+    400224: arthaslichking_bone_89
+    400226: arthaslichking_bone_9
+    400228: arthaslichking_bone_90
+    400230: arthaslichking_bone_91
+    400232: arthaslichking_bone_92
+    400234: arthaslichking_bone_93
+    400236: arthaslichking_bone_94
+    400238: arthaslichking_bone_95
+    400240: arthaslichking_bone_96
+    400242: arthaslichking_bone_97
+    400244: arthaslichking_bone_98
+    400246: arthaslichking_bone_99
+    400248: //RootNode
+    4300000: arthaslichking
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: arthaslichking
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arthaslichking
+        weight: 1
+      - path: arthaslichking 1
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_8
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_8/arthaslichking_bone_15
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_8/arthaslichking_bone_15/arthaslichking_bone_26
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_8/arthaslichking_bone_15/arthaslichking_bone_99
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_8/arthaslichking_bone_15/arthaslichking_bone_102
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_8/arthaslichking_bone_15/arthaslichking_bone_103
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_8/arthaslichking_bone_15/arthaslichking_bone_104
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_8/arthaslichking_bone_15/arthaslichking_bone_105
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_8/arthaslichking_bone_15/arthaslichking_bone_106
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_36
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_36/arthaslichking_bone_47
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_37
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_37/arthaslichking_bone_48
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_38
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_38/arthaslichking_bone_49
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_39
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_39/arthaslichking_bone_50
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_40
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_40/arthaslichking_bone_51
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_107
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_108
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_109
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_27/arthaslichking_bone_34/arthaslichking_bone_110
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_98
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_16/arthaslichking_bone_101
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_9/arthaslichking_bone_94
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_41
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_41/arthaslichking_bone_52
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_42
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_42/arthaslichking_bone_53
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_43
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_43/arthaslichking_bone_112
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_43/arthaslichking_bone_113
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_43/arthaslichking_bone_114
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_43/arthaslichking_bone_115
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_43/arthaslichking_bone_116
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_43/arthaslichking_bone_117
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_43/arthaslichking_bone_118
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_43/arthaslichking_bone_119
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_43/arthaslichking_bone_120
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_43/arthaslichking_bone_121
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_44
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_44/arthaslichking_bone_54
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_45
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_45/arthaslichking_bone_55
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_46
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_46/arthaslichking_bone_56
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_28/arthaslichking_bone_35/arthaslichking_bone_111
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_97
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_17/arthaslichking_bone_100
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_10/arthaslichking_bone_95
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_11
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_11/arthaslichking_bone_18
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_11/arthaslichking_bone_18/arthaslichking_bone_29
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_11/arthaslichking_bone_19
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_11/arthaslichking_bone_19/arthaslichking_bone_30
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_11/arthaslichking_bone_20
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_11/arthaslichking_bone_20/arthaslichking_bone_31
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_91
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_92
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_93
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_4/arthaslichking_bone_93/arthaslichking_bone_96
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_78
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_79
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_80
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_81
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_82
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_83
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_84
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_85
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_86
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_87
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_88
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_89
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_2/arthaslichking_bone_90
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3/arthaslichking_bone_5
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3/arthaslichking_bone_5/arthaslichking_bone_12
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3/arthaslichking_bone_5/arthaslichking_bone_12/arthaslichking_bone_21
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3/arthaslichking_bone_6
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3/arthaslichking_bone_6/arthaslichking_bone_13
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3/arthaslichking_bone_6/arthaslichking_bone_13/arthaslichking_bone_22
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3/arthaslichking_bone_6/arthaslichking_bone_13/arthaslichking_bone_22/arthaslichking_bone_32
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3/arthaslichking_bone_6/arthaslichking_bone_13/arthaslichking_bone_23
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3/arthaslichking_bone_7
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3/arthaslichking_bone_7/arthaslichking_bone_14
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3/arthaslichking_bone_7/arthaslichking_bone_14/arthaslichking_bone_24
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3/arthaslichking_bone_7/arthaslichking_bone_14/arthaslichking_bone_24/arthaslichking_bone_33
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_0/arthaslichking_bone_1/arthaslichking_bone_3/arthaslichking_bone_7/arthaslichking_bone_14/arthaslichking_bone_25
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_57
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_58
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_59
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_60
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_61
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_62
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_63
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_64
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_65
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_66
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_67
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_68
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_69
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_70
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_71
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_72
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_73
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_74
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_75
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_76
+        weight: 1
+      - path: arthaslichking 1/arthaslichking_bone_77
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
