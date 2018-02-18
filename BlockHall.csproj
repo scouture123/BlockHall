@@ -221,9 +221,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Case.cs" />
     <Compile Include="Assets\Scripts\Checkboard.cs" />
+    <Compile Include="Assets\Scripts\CheckboardIA.cs" />
+    <Compile Include="Assets\Scripts\CheckboardReseau.cs" />
+    <Compile Include="Assets\Scripts\IA.cs" />
     <Compile Include="Assets\Scripts\Jeton.cs" />
     <Compile Include="Assets\Scripts\MainCamera.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Mouvement.cs" />
     <Compile Include="Assets\Scripts\Piece.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
