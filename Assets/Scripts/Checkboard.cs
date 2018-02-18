@@ -14,10 +14,12 @@ public class Checkboard : MonoBehaviour {
     public Material skyboxEspace;
     public GameObject gameController;
     public MainMenu scriptMainMenu;
-    public GUITexture overlay;
+    public Image overlay;
     public float fadeTime;
     public Canvas canevaVictoire;
     public Canvas canevasMenuPause;
+    public Canvas menuButton;
+    public Canvas CanevasConfigurations;
     public Text texteVictoire;
 
 
@@ -28,52 +30,50 @@ public class Checkboard : MonoBehaviour {
     public GameObject lich_King_WhitePrefab;
     public GameObject whiteJetonPrefab;
 
-    private List<Piece> whitePieceList = new List<Piece>();
-    private List<Piece> blackPieceList = new List<Piece>();
-    private Vector3 boardOffset = new Vector3(-4.0f, 0, -4.0f);
-    private Vector3 pieceOffset = new Vector3(0.5f, 0, 0.5f);
+    protected List<Piece> whitePieceList = new List<Piece>();
+    protected List<Piece> blackPieceList = new List<Piece>();
+    protected Vector3 boardOffset = new Vector3(-4.0f, 0, -4.0f);
+    protected Vector3 pieceOffset = new Vector3(0.5f, 0, 0.5f);
 
-    private int etat;
-    private bool victoire = false;
+    protected int etat;
+    protected bool victoire = false;
 
-    private bool isWhiteTurn_ = true;
-    private bool isBlackTurn_ = false;
-    private Vector3 positionWhiteTurn_ = new Vector3(0f, 8f, -8f);
-    private Vector3 positionBlackTurn_ = new Vector3(0f, 8f, 8f);
-    private Vector3 angleWhiteTurn_ = new Vector3(45f, 0f, 0f);
-    private Vector3 angleBlackTurn_ = new Vector3(45f, 180f, 0f);
+    protected bool isWhiteTurn_ = true;
+    protected bool isBlackTurn_ = false;
+    protected Vector3 positionWhiteTurn_ = new Vector3(0f, 8f, -4f);
+    protected Vector3 positionBlackTurn_ = new Vector3(0f, 8f, 4f);
+    protected Vector3 angleWhiteTurn_ = new Vector3(70f, 0f, 0f);
+    protected Vector3 angleBlackTurn_ = new Vector3(70f, 180f, 0f);
 
-    private Piece selectedPiece;
-    private Jeton selectedJeton;
+    protected Piece selectedPiece;
+    protected Jeton selectedJeton;
 
-    private Vector2 mouseOver;
-    private Vector2 startDrag;
-    private Vector2 stopDrag;
+    protected Vector2 mouseOver;
+    protected Vector2 startDrag;
+    protected Vector2 stopDrag;
 
     // mouvement piece
-    private Vector3 startPos;
-    private Vector3 endPos;
-    private float lerptime = 1.4f;
-    private float currentLerpTime = 0;
-    private bool enMouvement = false;
-
+    protected Vector3 startPos;
+    protected Vector3 endPos;
+    protected float lerptime = 1.4f;
+    protected float currentLerpTime = 0;
+    protected bool enMouvement = false;
+    protected bool pause = false;
 
     // Use this for initialization
-    void Start () {
-        //Camera.main.transform.position = (Vector3.up * 8) + (Vector3.back * 8);
-        //Camera.main.transform.rotation = Quaternion.Euler(45.0f, 0.0f, 0.0f); ;
+    virtual protected void Start () {
         GenerateBoard();
         canevaVictoire.enabled = false;
         canevasMenuPause.enabled = false;
+        menuButton.enabled = true;
+        CanevasConfigurations.enabled = false;
         etat = 0;
-        
-        //isWhiteTurn = true;
     }
 	
 	// Update is called once per frame
-	private void Update () {
+	virtual protected void Update () {
 
-        if (Input.GetKey("escape")) {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
             Application.Quit();
         }
         if (Input.GetKey("m")) {
@@ -85,26 +85,28 @@ public class Checkboard : MonoBehaviour {
         int x = (int)mouseOver.x;
         int y = (int)mouseOver.y;
 
-        if(selectedPiece != null && (etat == 0 || etat == 2) ) {
+        if(selectedPiece != null && !enMouvement && (etat == 0 || etat == 2) ) {
             updatePieceDrag(selectedPiece);
         }
-        if (selectedJeton != null && (etat == 1 || etat == 3)) {
+        if (selectedJeton != null && !enMouvement && (etat == 1 || etat == 3)) {
             updateJetonDrag(selectedJeton);
         }
-        if (Input.GetMouseButtonDown(0) && (etat == 0 || etat == 2)) {
+        if (Input.GetMouseButtonDown(0) && !enMouvement && !pause && (etat == 0 || etat == 2)) {
             selectPiece(x, y);
         }
-        if (Input.GetMouseButtonDown(0) && (etat == 1 || etat == 3)) {
+        if (Input.GetMouseButtonDown(0) && !enMouvement && !pause && (etat == 1 || etat == 3)) {
             TryMoveJeton((int)startDrag.x, (int)startDrag.y, x, y);
         }
-        if (Input.GetMouseButtonUp(0) && (etat == 0 || etat == 2)) {
+        if (Input.GetMouseButtonUp(0) && !enMouvement && !pause && (etat == 0 || etat == 2)) {
             TryMovePiece((int)startDrag.x, (int)startDrag.y, x, y);
         }
-        if (isWhiteTurn_ && !victoire) {
+        if (isWhiteTurn_ && !enMouvement && !victoire)
+        {
             Camera.main.transform.eulerAngles = Vector3.Lerp(Camera.main.transform.eulerAngles, angleWhiteTurn_, Time.deltaTime);
             Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, positionWhiteTurn_, Time.deltaTime);
         }
-        if (isBlackTurn_ && !victoire) {
+        if (isBlackTurn_ && !enMouvement && !victoire)
+        {
             Camera.main.transform.eulerAngles = Vector3.Lerp(Camera.main.transform.eulerAngles, angleBlackTurn_, Time.deltaTime);
             Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, positionBlackTurn_, Time.deltaTime);
         }
@@ -134,7 +136,40 @@ public class Checkboard : MonoBehaviour {
         }
     }
 
-    private void updatePieceDrag(Piece p) {
+    public void PauseGame()
+    {
+        if (Time.timeScale == 1.0)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+        pause = !pause;
+        canevasMenuPause.enabled = !canevasMenuPause.enabled;
+        menuButton.enabled = !menuButton.enabled;
+    }
+
+    public void Configurations()
+    {
+        canevasMenuPause.enabled = !canevasMenuPause.enabled;
+        CanevasConfigurations.enabled = !CanevasConfigurations.enabled;
+    }
+
+    public void RetourMenuPrincipal()
+    {
+        Time.timeScale = 1;
+        StartCoroutine(FadeToBlack(() => SceneManager.LoadScene("MainMenu")));
+    }
+
+    public void Quitter()
+    {
+        Time.timeScale = 1;
+        Application.Quit();
+    }
+
+    protected void updatePieceDrag(Piece p) {
         if (!Camera.main) {
             Debug.Log("Unable to find main camera");
             return;
@@ -146,7 +181,7 @@ public class Checkboard : MonoBehaviour {
         }
     }
 
-    private void updateJetonDrag(Jeton j) {
+    protected void updateJetonDrag(Jeton j) {
         if (!Camera.main) {
             Debug.Log("Unable to find main camera");
             return;
@@ -158,7 +193,7 @@ public class Checkboard : MonoBehaviour {
         }
     }
 
-    private void updateMouseOver() {
+    protected void updateMouseOver() {
 
         if (!Camera.main) {
             Debug.Log("Unable to find main camera");
@@ -177,7 +212,7 @@ public class Checkboard : MonoBehaviour {
 
     }
 
-    private void selectPiece(int x, int y) {
+    protected void selectPiece(int x, int y) {
         if (x < 0 || x >= pieces.Length || y < 0 || y >= pieces.Length)
             return;
         Piece p = pieces[x, y];
@@ -193,7 +228,7 @@ public class Checkboard : MonoBehaviour {
         }
     }
 
-    private void selectJeton(int x, int y) {
+    protected void selectJeton(int x, int y) {
         if (x < 0 || x >= pieces.Length || y < 0 || y >= pieces.Length)
             return;
 
@@ -204,44 +239,40 @@ public class Checkboard : MonoBehaviour {
         }
     }
 
-    private void TryMoveJeton(int x1, int y1, int x2, int y2) {
+    protected void TryMoveJeton(int x1, int y1, int x2, int y2) {
 
         startDrag = new Vector2(x1, y1);
         stopDrag = new Vector2(x2, y2);
         
         if (x2 < 0 || x2 >= jetons.Length || y2 < 0 || y2 >= jetons.Length) {
-            if (selectedJeton != null) {
-                MoveJeton(selectedJeton, x1, y1);
-            }
-            startDrag = Vector2.zero;
-            selectedJeton = null;
             return;
         }
         
         if (selectedJeton != null) {
             // le jeton n'a pas bouger
-
             if (stopDrag == startDrag) {
                 return;
             }
-            if (selectedJeton.ValidMove(pieces, jetons, x1, y1, x2, y2)) {
+            if (IA.ValidMove(pieces, jetons, x1, y1, x2, y2)) {
                 jetons[x2, y2] = selectedJeton;
                 jetons[x1, y1] = null;
                 MoveJeton(selectedJeton, x2, y2);
+                selectedJeton.GetComponent<MeshRenderer>().enabled = true;
                 EndTurn();
             }
         }
     }
     
-    private void TryMovePiece(int x1, int y1, int x2, int y2) {
+    protected void TryMovePiece(int x1, int y1, int x2, int y2) {
 
         startDrag = new Vector2(x1, y1);
         stopDrag = new Vector2(x2, y2);
         selectedPiece = pieces[x1, y1];
 
         if (x2 < 0 || x2 >= pieces.Length || y2 < 0 || y2 >= pieces.Length) {
-            if(selectedPiece != null) {
-                MovePiece(selectedPiece, x1, y1, x2, y2, false);
+            if (selectedPiece != null)
+            {
+                MovePiece(selectedPiece, x1, y1, x2, y2, true);
             }
             startDrag = Vector2.zero;
             selectedPiece = null;
@@ -256,18 +287,17 @@ public class Checkboard : MonoBehaviour {
                 selectedPiece = null;
                 return;
             }
-            if (selectedPiece.ValidMove(pieces, jetons, x1, y1, x2, y2)) {
+            if (IA.ValidMove(pieces, jetons, x1, y1, x2, y2)) {
                 pieces[x2, y2] = selectedPiece;
                 selectedPiece.setPositionX(x2);
                 selectedPiece.setPositionY(y2);
                 pieces[x1, y1] = null;
                 MovePiece(selectedPiece, x1, y1, x2, y2, false);
 
-
                 GenerateJeton(x2, y2);
                 Jeton j = jetons[x2, y2];
                 selectedJeton = j;
-                j.GetComponent<MeshRenderer>().enabled = false;
+                selectedJeton.GetComponent<MeshRenderer>().enabled = false;
                 startDrag = mouseOver;
                 EndTurn();
             }
@@ -277,10 +307,9 @@ public class Checkboard : MonoBehaviour {
                 selectedPiece = null;
             }
         }
-
     }
 
-    private void EndTurn() {
+    protected void EndTurn() {
         
         if(etat == 0 || etat == 2) {
             etat++;
@@ -301,7 +330,7 @@ public class Checkboard : MonoBehaviour {
         checkVictory();
     }
 
-    private void checkVictory() {
+    protected void checkVictory() {
         int nombreDePieceBloque = 0;
         for (int i = 0; i < whitePieceList.Count; i++) {
             Piece pieceAVerifier = whitePieceList[i];
@@ -313,7 +342,6 @@ public class Checkboard : MonoBehaviour {
                 StartCoroutine(Victoire());
                 texteVictoire.text = "le joueur noir a gagné!!!";
                 canevaVictoire.enabled = true;
-                //Debug.Log("le joueur noir a gagné!!!");
             }
         }
         nombreDePieceBloque = 0;
@@ -327,12 +355,11 @@ public class Checkboard : MonoBehaviour {
                 StartCoroutine(Victoire());
                 texteVictoire.text = "le joueur blanc a gagné!!!";
                 canevaVictoire.enabled = true;
-                //Debug.Log("le joueur blanc a gagné!!!");
             }
         }
     }
 
-    private bool scanAutour(Piece pieceAVerifier) {
+    protected bool scanAutour(Piece pieceAVerifier) {
         List<Case> voisins = cases[pieceAVerifier.getPositionX(), pieceAVerifier.getPositionY()].getVoisins();
         for (int i = 0; i < voisins.Count; i++) {
             if (voisins[i].getOccuper() == false) {
@@ -342,7 +369,7 @@ public class Checkboard : MonoBehaviour {
         return true;
     }
 
-    private void GenerateBoard() {
+    protected void GenerateBoard() {
         // generate case
         for (int i = 0; i < cases.GetLength(0); i++) {
             for (int j = 0; j < cases.GetLength(1); j++) {
@@ -373,7 +400,7 @@ public class Checkboard : MonoBehaviour {
         miseAJourPlateau();
     }
 
-    private void GeneratePiece(int x, int y) {
+    virtual protected void GeneratePiece(int x, int y) {
         bool isPieceWhite = (y > 3) ? false : true;
         GameObject gameObject = Instantiate((isPieceWhite) ? lich_King_WhitePrefab : lich_King_BlackPrefab) as GameObject;
         gameObject.transform.SetParent(transform);
@@ -392,15 +419,15 @@ public class Checkboard : MonoBehaviour {
         firstMovePiece(p, x, y);
     }
 
-    private void GenerateJeton(int x, int y) {
+    protected void GenerateJeton(int x, int y) {
         GameObject gameObject = Instantiate(whiteJetonPrefab) as GameObject;
         gameObject.transform.SetParent(transform);
         Jeton j = gameObject.GetComponent<Jeton>();
         jetons[x, y] = j;
-        MoveJeton(j, x, y);
+        j.GetComponent<MeshRenderer>().enabled = false;
     }
 
-    private void MovePiece(Piece p, int x1, int y1, int x2, int y2, bool surPlace) {
+    protected void MovePiece(Piece p, int x1, int y1, int x2, int y2, bool surPlace) {
         if (!surPlace) {
             selectedPiece = p;
             p.GetComponent<Animation>().Play();
@@ -416,11 +443,11 @@ public class Checkboard : MonoBehaviour {
         }
     }
 
-    private void MoveJeton(Jeton j, int x, int y) {
+    protected void MoveJeton(Jeton j, int x, int y) {
         j.transform.position = (Vector3.right * x) + (Vector3.forward * y) + boardOffset + pieceOffset;
     }
 
-    private void firstMovePiece(Piece p, int x, int y) {
+    protected void firstMovePiece(Piece p, int x, int y) {
         p.transform.position = (Vector3.right * x) + (Vector3.forward * y) + boardOffset + pieceOffset;
         bool isPieceWhite = (y > 3) ? false : true;
         if (isPieceWhite) {
@@ -431,7 +458,7 @@ public class Checkboard : MonoBehaviour {
         }
     }
 
-    private void miseAJourPlateau() {
+    protected void miseAJourPlateau() {
         for (int i = 0; i < cases.GetLength(0); i++) {
             for (int j = 0; j < cases.GetLength(1); j++) {
                 if (pieces[i, j] != null || jetons[i, j] != null) {
@@ -444,7 +471,7 @@ public class Checkboard : MonoBehaviour {
         }
     }
 
-    private void genererVoisinsCases() {
+    protected void genererVoisinsCases() {
         for (int i = 0; i < cases.GetLength(0) - 1; i++) {
             for (int j = 0; j < cases.GetLength(1) - 1; j++) {
                 cases[i, j].ajouterVoisin(cases[i, j + 1]);
@@ -499,7 +526,7 @@ public class Checkboard : MonoBehaviour {
         }
     }
 
-    private void ajustementAngle(Piece p, int x1, int y1, int x2, int y2) {
+    protected void ajustementAngle(Piece p, int x1, int y1, int x2, int y2) {
         int deltaX = x2 - x1;
         int deltaY = y2 - y1;
         if (deltaX > 0 && deltaY > 0) {
@@ -528,7 +555,7 @@ public class Checkboard : MonoBehaviour {
         }
     }
 
-    private void genererSkybox() {
+    protected void genererSkybox() {
         scriptMainMenu = (MainMenu)gameController.GetComponent(typeof(MainMenu));
         if (scriptMainMenu.getSkybox() == 1) {
             scriptMainMenu.setSkyboxEspace();
@@ -541,7 +568,7 @@ public class Checkboard : MonoBehaviour {
         }
     }
 
-    private IEnumerator FadeToClear() {
+    protected IEnumerator FadeToClear() {
 
         overlay.gameObject.SetActive(true);
         overlay.color = Color.black;
@@ -563,7 +590,7 @@ public class Checkboard : MonoBehaviour {
 
     }
 
-    private IEnumerator FadeToBlack(Action levelLoad) {
+    protected IEnumerator FadeToBlack(Action levelLoad) {
 
         overlay.gameObject.SetActive(true);
         overlay.color = Color.clear;
@@ -586,13 +613,13 @@ public class Checkboard : MonoBehaviour {
 
     }
 
-    private IEnumerator ChangeCameraTurn() {
+    protected IEnumerator ChangeCameraTurn() {
         yield return new WaitForSeconds(0.5f);
         isWhiteTurn_ = !isWhiteTurn_;
         isBlackTurn_ = !isBlackTurn_;
     }
 
-    private IEnumerator Victoire() {
+    protected IEnumerator Victoire() {
         yield return new WaitForSeconds(2f);
         StartCoroutine(FadeToBlack(() => SceneManager.LoadScene("MainMenu")));
     }

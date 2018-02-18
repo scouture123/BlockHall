@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 42d07a6e445811b4fbb1366435fb37d8
+timeCreated: 1518105181
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - skyboxMontagne: {instanceID: 0}
+  - skyboxPlage: {instanceID: 0}
+  - skyboxEspace: {instanceID: 0}
+  - gameController: {instanceID: 0}
+  - scriptMainMenu: {instanceID: 0}
+  - overlay: {instanceID: 0}
+  - canevaVictoire: {instanceID: 0}
+  - canevasMenuPause: {instanceID: 0}
+  - texteVictoire: {instanceID: 0}
+  - lich_King_BlackPrefab: {fileID: 100248, guid: 396340894b57f214b8e087463d1f267c,
+      type: 3}
+  - lich_King_WhitePrefab: {fileID: 100248, guid: f6f576d59bf11ba48aaa2325f4629f63,
+      type: 3}
+  - whiteJetonPrefab: {fileID: 100000, guid: 2b1af924261e38d42a0a4d94674b9cf2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

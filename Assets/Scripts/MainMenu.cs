@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System;
@@ -72,8 +73,19 @@ public class MainMenu : MonoBehaviour {
         }
     }
 
-    public void StartGame() {
-        StartCoroutine(FadeToBlack( () => SceneManager.LoadScene("Game")));
+    public void StartHotSeat()
+    {
+        StartCoroutine(FadeToBlack( () => SceneManager.LoadScene("Hotseat")));
+    }
+
+    public void StartIA()
+    {
+        StartCoroutine(FadeToBlack(() => SceneManager.LoadScene("IA")));
+    }
+
+    public void StartReseau()
+    {
+        StartCoroutine(FadeToBlack(() => SceneManager.LoadScene("Reseau")));
     }
 
     public void Quit() {
